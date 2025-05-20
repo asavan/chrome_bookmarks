@@ -1,0 +1,20 @@
+{
+    "name": "Bookmark Shortcutter",
+    "version": "1.0",
+    "description": "Custom shortcuts for bookmarks",
+
+    "permissions": [
+    "tabs",
+    "scripting",
+    "activeTab"
+  ],
+    "content_scripts": [
+      {
+        "matches": ["http://*/*", "https://*/*"],
+        "js": ["background.js"],
+        "run_at": "document_start"
+      }
+      ],
+    "manifest_version": 3
+  }
+  
