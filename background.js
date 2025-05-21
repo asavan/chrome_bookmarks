@@ -15,7 +15,11 @@ function stopVideo() {
     const video = document.querySelector(".video-stream.html5-main-video");
     if (video) {
         video.pause();
-    }    
+    }
+    const shortsPauseButton = document.querySelector("#play-pause-button-shape > button");
+    if (shortsPauseButton) {
+        shortsPauseButton.click()
+    }
 }
 
 function sendToObsidian() {
