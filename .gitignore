@@ -1,0 +1,14 @@
+*.jar
+*.iml
+.idea/*
+deploy
+target
+*.class
+*.log
+*.log.*
+.idea
+generated
+docs
+node_modules
+package-lock.json
+.env
