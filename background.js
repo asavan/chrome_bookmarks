@@ -45,8 +45,10 @@ function getIdFromUrl(line) {
 
 function getYoutubeUrl() {
     const curUrl = window.location.href;
-    if (curUrl.includes("youtube.com") && curUrl.includes("watch")) {
-        return curUrl;
+    if (curUrl.includes("youtube.com")) {
+        if (curUrl.includes("watch") || curUrl.includes("shorts")) {
+            return curUrl;
+        }
     }
     const underCursor = document.querySelector('[href*="v"]:hover');
     if (!underCursor) {
